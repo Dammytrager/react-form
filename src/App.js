@@ -1,25 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import TestForm from "./components/test-form";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="d-flex h-100 w-100 justify-content-center align-items-center">
+          <div className="jumbotron w-50">
+              <h3 className="text-center mb-3">Form</h3>
+              <TestForm />
+          </div>
+      </div>
   );
 }
 
